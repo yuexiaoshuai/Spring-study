@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--bean就是java对象 , 由Spring创建和管理-->
+    <bean id="hello" class="com.eva.pojo.Hello">
+        <property name="name" value="Spring"/>
+    </bean>
+
+    <!--使用有参构造来创建对象-->
+    <!--以下标的方式创建-->
+    <bean id="user1" class="com.eva.pojo.User">
+        <constructor-arg index="0" value="15"/>
+        <constructor-arg index="1" value="jock"/>
+    </bean>
+    <!--以参数类型的方式创建-->
+    <bean id="user2" class="com.eva.pojo.User">
+        <constructor-arg type="int" value="18"/>
+        <constructor-arg type="java.lang.String" value="rose"/>
+    </bean>
+    <!--以参数名称的方式创建-->
+    <bean id="user3" class="com.eva.pojo.User">
+        <constructor-arg name="id" value="1"/>
+        <constructor-arg name="name" value="swift"/>
+    </bean>
+</beans>

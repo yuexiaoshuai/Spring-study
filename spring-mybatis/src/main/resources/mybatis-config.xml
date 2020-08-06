@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--configuration核心配置文件-->
+<configuration>
+
+    <!--起别名和设置放在mybatis配置文件中，其余的都可以放在spring配置文件-->
+    <typeAliases>
+        <package name="com.eva.pojo"/>
+    </typeAliases>
+</configuration>
