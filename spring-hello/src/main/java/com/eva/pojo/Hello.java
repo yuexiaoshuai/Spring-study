@@ -20,5 +20,6 @@ public class Hello {
 
     public void show(){
         System.out.println("Hello，"+ name );
+        System.out.println("Hello，"+ name );
     }
 }
